@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Management</title>
+	<link rel="stylesheet" href="/static/base.css">
+</head>
+
+<body style="background-color: white;">
+    <h1 id="title" style="color: black; font-size: 30px;"> 
+        This is a super secrete page with all the login info
+    </h1>
+
+	<form id="mainHandler" style="background-color: grey;">
+		<h1 id="Header" style="color: white;">Management Page</h1>
+        <h2 id="userNamePasswordList">Username: Passwords:  </h2>
+        <ul>
+            {% for username, password in user_dict.items() %}
+                <li><strong>{{ username }}</strong>: {{ password }}</li>
+            {% endfor %}
+        </ul>
+
+        <div id="johnathan"></div>
+	</form>
+</body>
+</html>
